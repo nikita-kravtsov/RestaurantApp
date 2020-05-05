@@ -185,9 +185,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wvt-pG-0OH">
-                                <rect key="frame" x="0.0" y="126" width="414" height="780"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wvt-pG-0OH">
+                                <rect key="frame" x="0.0" y="120" width="414" height="776"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="X5G-f4-6k7" customClass="CustomTableViewCell" customModule="RestaurantApp" customModuleProvider="target">
@@ -251,9 +250,8 @@
                                     <outlet property="delegate" destination="qz7-Rq-gXX" id="5Oc-AS-nxc"/>
                                 </connections>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="8Pg-lO-Pnt">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8Pg-lO-Pnt">
                                 <rect key="frame" x="0.0" y="88" width="414" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Data"/>
                                     <segment title="Name"/>
@@ -264,6 +262,15 @@
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8Pg-lO-Pnt" firstAttribute="trailing" secondItem="rNa-pk-RHj" secondAttribute="trailing" id="9Z4-CI-teU"/>
+                            <constraint firstItem="wvt-pG-0OH" firstAttribute="trailing" secondItem="rNa-pk-RHj" secondAttribute="trailing" id="FtA-eC-qEM"/>
+                            <constraint firstItem="8Pg-lO-Pnt" firstAttribute="leading" secondItem="rNa-pk-RHj" secondAttribute="leading" id="PPe-cX-hbd"/>
+                            <constraint firstItem="wvt-pG-0OH" firstAttribute="top" secondItem="8Pg-lO-Pnt" secondAttribute="bottom" constant="1" id="fkt-Tl-wja"/>
+                            <constraint firstItem="8Pg-lO-Pnt" firstAttribute="top" secondItem="rNa-pk-RHj" secondAttribute="top" id="oHK-Nf-Gg5"/>
+                            <constraint firstAttribute="bottom" secondItem="wvt-pG-0OH" secondAttribute="bottom" id="r1D-HI-fhP"/>
+                            <constraint firstItem="wvt-pG-0OH" firstAttribute="leading" secondItem="rNa-pk-RHj" secondAttribute="leading" id="tZY-PL-rHw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rNa-pk-RHj"/>
                     </view>
                     <navigationItem key="navigationItem" title="My places" largeTitleDisplayMode="never" id="1cD-bx-coe">
